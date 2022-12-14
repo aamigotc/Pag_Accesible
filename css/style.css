@@ -1,0 +1,53 @@
+body{
+    font-size: 1.3em;
+}
+html{
+    scroll-behavior: smooth;
+}
+table{
+    border: 1px solid black;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+   }
+   
+   .sr-only-focusable:active,
+   .sr-only-focusable:focus {
+    outline:none; /*para que al coger el foco no marca con borde */
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+   }
+
+
+a:hover, a:focus, a:active { 
+    position: relative;
+} 
+
+a:hover span, a:focus span, a:active span { 
+    left: 0; 
+    top: 30px; 
+    width: 100px; 
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+a:hover span:before, a:focus span:before, a:active span:before {
+    content: "";
+}
+span { 
+    position: absolute;   
+    left: -9999em;   
+    width: 1px;   
+    overflow: hidden;   
+}    
