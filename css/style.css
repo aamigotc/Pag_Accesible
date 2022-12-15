@@ -38,12 +38,13 @@ a:hover span, a:focus span, a:active span {
     left: 0; 
     top: 30px; 
     width: 100px; 
+    padding: 5px;
     background-color: bisque;
     border: 1px solid black;
 }
 
 a:hover span:before, a:focus span:before, a:active span:before {
-    content: "";
+    content: "Más Información";
 }
 span { 
     position: absolute;   
@@ -51,3 +52,19 @@ span {
     width: 1px;   
     overflow: hidden;   
 }    
+
+footer{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid black;
+    text-align: center;
+    padding-top:3vh;
+}
+a:hover .footerAcc, a:focus .footerAcc, a:active .footerAcc { 
+    left: 120px; 
+    top: -30px; 
+    width: 100%;
+}
+img{
+    width: 300px;
+}
