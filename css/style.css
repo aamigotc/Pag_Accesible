@@ -1,12 +1,19 @@
 body{
     font-size: 1.3em;
 }
+
 html{
     scroll-behavior: smooth;
 }
+
 table{
+    text-align: center;
+}
+
+table, td{
     border: 1px solid black;
 }
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -16,18 +23,18 @@ table{
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-   }
+}
    
-   .sr-only-focusable:active,
-   .sr-only-focusable:focus {
-    outline:none; /*para que al coger el foco no marca con borde */
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-   }
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+outline:none; /*para que al coger el foco no marca con borde */
+position: static;
+width: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+clip: auto;
+}
 
 
 a:hover, a:focus, a:active { 
@@ -46,6 +53,7 @@ a:hover span, a:focus span, a:active span {
 a:hover span:before, a:focus span:before, a:active span:before {
     content: "Más Información";
 }
+
 span { 
     position: absolute;   
     left: -9999em;   
@@ -60,11 +68,38 @@ footer{
     text-align: center;
     padding-top:3vh;
 }
+
 a:hover .footerAcc, a:focus .footerAcc, a:active .footerAcc { 
     left: 120px; 
     top: -30px; 
     width: 100%;
 }
+
 img{
     width: 300px;
+}
+
+ul{
+    list-style-image: url(../img/list.png);
+}
+.logo{
+    width: 500px;
+}
+.tablaJuegos th{
+    border: 1px solid black;
+}
+.tablaJuegos .noBorder{
+    border: 0;
+}
+.tablaJuegos{
+    border: 0;
+}
+.descs {
+    position: absolute;  
+    left: -9999em;   
+    width: 1px;   
+    overflow: hidden;
+}
+.allSnakes{
+    width: 700px
 }
